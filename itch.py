@@ -85,7 +85,7 @@ def get_opencritic_info(games: List[Game]) -> List[Game]:
             urllib.request.urlopen(request1).read().decode("utf-8")
         )[0]
 
-        # From 0.2 to 0.3 some games where correct some not
+        # From 0.2 to 0.3 some games were correct some not
         if respond1["dist"] > 0.3:
             continue
 
